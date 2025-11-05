@@ -10,7 +10,15 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>This Person</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Source Code : <a href='https://github.com/CodeXBotz/File-Sharing-Bot'>Click here</a>\n○ Channel : @CodeXBotz\n○ Support Group : @CodeXBotzSupport</b>",
+            text = """<b>🤖 ᴍʏ ɴᴀᴍᴇ: {botname}
+
+<b><blockquote expandable>» ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/Here_remo>Ꮢᴇᴍᴏ 🜲</a>
+» ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ: <a href=https://t.me/play_tamil_dubbed_series>ᴘʟᴀʏ ᴄᴏᴍᴍᴜɴɪᴛʏ</a>
+» ᴀᴅᴠᴀɴᴄᴇ ғᴇᴀᴛᴜʀᴇs: <a href=https://telegra.ph/BOT-FEATURES-11-09-28>Cʟɪᴄᴋ ʜᴇʀᴇ</a>
+» ʟᴀɴɢᴜᴀɢᴇ: <a href=https://docs.python.org/3/>Pʏᴛʜᴏɴ 3</a>
+» ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org/>Pʏʀᴏɢʀᴀᴍ ᴠ2</a>
+» ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/Here_remo>Ꮢᴇᴍᴏ</a></blockquote></b>"""
+            
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
